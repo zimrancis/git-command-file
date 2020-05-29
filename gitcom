@@ -1,0 +1,180 @@
+git init
+git add
+git add .  [added to staging index]
+git status
+git commit -m "initial commit"
+git status
+git log
+[now make some changes occur in a file..]
+git status
+git add .
+git status
+git commit -m "2nd commit"
+git satatus
+git log
+
+git log --graph --decorate --all --pretty=online // as per the link-> https://git-scm.com/docs/pretty-formats
+ or if..
+git log --graph --decorate --all --pretty=short
+or if..
+git log --graph --decorate --all --pretty=full
+or if..
+git log --graph --decorate --all --pretty=fuller
+
+git remote add origin git@github.com:zimrancis/UserFront.git
+git push -u origin master
+
+now again make some changes in your file that allready on git server
+now
+git status
+git add <---> fully_qualified_path [if single file to be coppied]
+	or else
+git add .
+git commit -m "3rd commit"
+git status
+git log
+git remote add origin git@github.com:zimrancis/UserFront.git
+git push -u origin master
+
+
+NOW TO PULL IT BACK TO LOCAL REPO:
+make folder in a dir
+then go inside the -> dir/folder
+dir/folder#  git clone https://github.com/zimrancis/UserFront.git
+
+now it can be opened up in IDE to be worked on...!
+
+
+now if developer2 makes some changes in a file up in the git surver, that
+updated file to get available on developer1 (my) local repo:
+
+dir/folder# git pull original master
+
+
+
+# git branch [Enter]
+
+{create a branchh}
+
+# git branch phase2 [Enter]
+
+now check..
+# git branch [Enter]
+
+now switch to new created branch...
+
+# git checkout phase2 [Enter]
+
+now again check branch..
+
+# git branch [Enter] now we are shown in new branch
+
+do some changes in a file...
+check the changes...
+git status
+
+# git add <---> {fully_qualified_path} [if single file]
+	or else
+# git add .
+
+git commit -m "commit message"
+
+now commited code in our staging it is not master and not even in phase2
+
+now let's commit this changes to phase2
+
+# git push origin phase2 [Enter]
+
+now click the button "compare & pull request" on git server
+
+[it is now able to merge]
+
+then click the button "create pull request"
+
+[this branch has no confliocts with the base branch]
+
+[you can check by clicking the above tab named "File changed (1)"]
+so that you can compare and you can give your review there..
+Here on the right one part you can check your changes you can add your comment here 
+
+now go back and click the button "Merge pull request"
+if you want you can add some message 
+confirm by clicking the button "Confirm merge"
+{pull request successfully merged and closed..}
+let's go to the application folder 
+
+so we are now in branch phase2 [in bash/terminal]
+now go to our master branch... coz changes is on phase2 it won't be reflected on master until we'll not take the pull !!!
+# git checkout master [Enter]
+
+now we are in mastrer branch...
+let's check..
+
+# git branch [Enter]
+now we are in master..., if you look at IDE it'll show it's pointing to master
+and the changes are not reflected here...!!!
+
+so, Let's do the "#git pull"
+# git pull [it's similer to update]
+again got to the app on IDE and observe that the changes are reflected now!
+
+So we crearted a branch phase2 and we did some changes and that we alreaady merged to our master branch,
+now if yoou want you can delete branch. So to delete the branch
+
+# git push origin --delete phase2 {it may take few seconds..} 
+now go to the giothub folder 
+You won't find any brancch apart from master {click button "Branch:master"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git init
+ls
+git remote add origin git@github.com:zimrancis/UserFront.git
+git remote
+git status
+git add .
+git status
+git commit -m "initial commit
+git push -u origin master
+
+git clone https://github.com/zimrancis/UserFront.git
+
+cd UserFront/
+ls
+git status
+touch myfile_2.txt
+touch test2.java
+git status
+
+
+
+git add file.txt (for example: 10 java files)
+git commit file.txt
+
+
+create brunches and merging... (hasing algo  git generate checksum of with 40charactrs sha-algorithm a-f 1-9 
+
+
+
+
